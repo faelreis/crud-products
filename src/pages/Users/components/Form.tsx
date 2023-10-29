@@ -42,6 +42,7 @@ export default function Form() {
     setFocus,
     setValue,
   } = useForm<User>({
+    // @ts-ignore
     resolver: yupResolver(UserSchema),
   })
 
